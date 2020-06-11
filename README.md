@@ -11,7 +11,7 @@ Promises in Javascript:
 
 Promise is a way of bringing asynchronocity to javascript in a cleaner way. Whenever a data is requested which cannot be returned immediately, the javascript returns a promise instead which gurantees either a value or an error once completed. The same things can be achieved with callbacks but that comes at the cost of <b>Inversion of control</b>. The callee has to execute the callback with the requested data once it is available to him. In promises the control remains with the caller (unlike callbacks where the control goes to the callee who can mess things up).  
 
-Promises in javascript is a web API and is executed in the callback queue of the engine hence acts similar to setTimeout, setInterval and other web APIS.   
+Promises in javascript is a web API and is executed in the micro task queue (not callback queue) of the engine hence acts similar to setTimeout, setInterval and other web APIS that are executed in the callback queue but has a higher precedence.   
 
 Promises has three statuses viz. pending, resolved and rejected.  
   
