@@ -12,6 +12,7 @@ function debounce (timeout, fn) {
     }
 }
 
+
 function addNos (a,b) {
     console.log(a + b);
 }
