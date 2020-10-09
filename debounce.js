@@ -16,6 +16,7 @@ function debounce (timeout, fn) {
 function addNos (a,b) {
     console.log(a + b);
 }
+
 // debounce(5000, addNos)(4, 5);
 var debouncedAdd = debounce(5000, addNos);
 
